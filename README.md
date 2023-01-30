@@ -155,7 +155,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**? |
 |          | _We can create a map using a dictionnary: `const dictionary = new Map();` Then we can set the values, e.g. `dict.set("key1", "value1");` and use the `get(), set(), delete() and has()` cmd to manage it. E.g. `console.log(dict.get("key1"));` it will show "value1"._                                                                      |
 | Question | When and how do we **get rid of inactive players**?                                                |
-|          | _Enter your response here..._                                                                      |
+|          | _Every 5 secondes, we check if the musicians list is up to date. If one of them is inactive, we get rid of it._                                                                      |
 | Question | How do I implement a **simple TCP server** in Node.js?                                             |
 |          | _We can use the `net` module. We first create the TCP server `const server = net.createServer(onClientConnection);` where `onClientConnection is the callback function` that sends the actives musicians. Then, we can listen to the TCP port with `server.listen(port, function() { console.log("Server listening on port", port); });`_                                                                      |
 
