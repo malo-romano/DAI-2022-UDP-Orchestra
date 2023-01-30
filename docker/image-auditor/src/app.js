@@ -8,7 +8,7 @@ const config = {
     "multicast-group": "224.0.0.1",
     "multicast-port": 5460,
     "tcp-port": 2205,
-    "keep-active-timeout": 5000,
+    "keep-active-timeout": 5,
     "sounds": {
         "ti-ta-ti": "piano",
         "pouet": "trumpet",
@@ -56,8 +56,8 @@ const tcpServer = net.createServer();
 
 tcpServer.on("connection", socket => {
     const payload = Array.from(activeMusicians.entries())
-        .filter(([uuid, musician])=> musician.activeSince > moment().subtract(config['keep-active-timeout'], 'ms').format())
-        .map(([uuid, musician]) => ({uuid: uuid, ...musician}))
+        .filter(([uuid, musician])=> musician.activeSince > moment().subtract(config['keep-active-timeout'], 'seconds').format('DD.MM.YYYY HH:mm:ss'))
+        .map(([uuid, musician]) => ({uuid: uuid, ...musician}));
     socket.write(JSON.stringify(payload));
     socket.end();
 });
