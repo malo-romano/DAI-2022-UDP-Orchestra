@@ -6,7 +6,7 @@ const udpSocket = dgram.createSocket("udp4");
 
 const config = {
     "multicast-group": "239.42.13.37",
-    "multicast-port": 1234,
+    "multicast-port": 5460,
     "tcp-port": 2205,
     "keep-active-timeout": 5000,
     "sounds": {
@@ -35,7 +35,7 @@ udpSocket.on("message", (message, source) => {
         if (config.sounds.hasOwnProperty(soundEmitted.sound)) {
             activeMusicians.set(soundEmitted.uuid, {
                 instrument: config.sounds[soundEmitted.sound],
-                activeSince: dayjs().format()
+                activeSince: moment().format('DD.MM.YYYY HH:mm:ss')
             })
         }
     }
@@ -44,7 +44,7 @@ udpSocket.on("message", (message, source) => {
 
 setInterval(() => {
     activeMusicians.forEach((uuid, musician) => {
-        if (dayjs().diff(musician.activeSince) > config['keep-active-timeout']) {
+        if (moment().diff(musician.activeSince) > config['keep-active-timeout']) {
             activeMusicians.delete(uuid);
         }
     });
@@ -56,7 +56,7 @@ const tcpServer = net.createServer();
 
 tcpServer.on("connection", socket => {
     const payload = Array.from(activeMusicians.entries())
-        .filter(([uuid, musician])=> musician.activeSince > dayjs().subtract(config['keep-active-timeout'], 'ms').format())
+        .filter(([uuid, musician])=> musician.activeSince > moment().subtract(config['keep-active-timeout'], 'ms').format())
         .map(([uuid, musician]) => ({uuid: uuid, ...musician}))
     socket.write(JSON.stringify(payload));
     socket.end();
