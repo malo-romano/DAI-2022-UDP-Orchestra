@@ -1,0 +1,28 @@
+origin	https://github.com/malo-romano/DAI-2022-UDP-Orchestra.git (fetch)
+origin	https://github.com/malo-romano/DAI-2022-UDP-Orchestra.git (push)
+Starting auditor container "acde1ecda8f283c1f09f01298545b9a6a112974e7ee206375dffa9e4805a1f0b"
+Starting auditor container "98d229b29db98dff77414aa98e063ebc3455f187a3c33a8c4632c8d360607fc8"
+Starting auditor container "1046795c50c0dfa54d0df1740cfe580a8d7061b6eaa4d0b0985106ef8b761cd7"
+Starting auditor container "cb557cc02c6588bcc3758abfa5ccd1fbd06bd55e6b3106ecc532e0066fd107d1"
+Starting auditor container "9197d542953315102567775f2d56e59e5f3b0d997d155db8abee20028f653683"
+Starting auditor container "0d5da9582696e769c3cda9cd78ad0ca0ec29c090d5c25225a43f448b9251c62c"
+Starting auditor container "5d53da0edc18ce7dfbfae52c203f5f7a3fa6a8c9d6d14a3e61fab63d81308661"
+Starting auditor container "8cae38c5504a9a0faf9f42664b764d790ecea4a57b62345713e423a2abf6360c"
+Starting auditor container "e4df3f2cabbfc94d847cdcec36991a85eb079e90cf5c1642292812f11a5a20f7"
+Starting auditor container "56b14abe9aeaa5c3c40c9041cac08adc0ad0093fc49b7db6da08b948a4805884"
+Starting auditor container "62466ea2eb67f56de7ccd56836c0adf439a757d6c6dbe6d6f428cbf49cdbedd8"
+11 containers have been started.
+cb557cc02c6588bcc3758abfa5ccd1fbd06bd55e6b3106ecc532e0066fd107d1 : /opt/app/app.js,violin
+e4df3f2cabbfc94d847cdcec36991a85eb079e90cf5c1642292812f11a5a20f7 : /opt/app/app.js,flute
+8cae38c5504a9a0faf9f42664b764d790ecea4a57b62345713e423a2abf6360c : /opt/app/app.js,flute
+acde1ecda8f283c1f09f01298545b9a6a112974e7ee206375dffa9e4805a1f0b : /opt/app/app.js,violin
+98d229b29db98dff77414aa98e063ebc3455f187a3c33a8c4632c8d360607fc8 : /opt/app/app.js,flute
+62466ea2eb67f56de7ccd56836c0adf439a757d6c6dbe6d6f428cbf49cdbedd8 : /opt/app/app.js,drum
+5d53da0edc18ce7dfbfae52c203f5f7a3fa6a8c9d6d14a3e61fab63d81308661 : /opt/app/app.js,flute
+1046795c50c0dfa54d0df1740cfe580a8d7061b6eaa4d0b0985106ef8b761cd7 : /opt/app/app.js,drum
+56b14abe9aeaa5c3c40c9041cac08adc0ad0093fc49b7db6da08b948a4805884 : /opt/app/app.js,drum
+9197d542953315102567775f2d56e59e5f3b0d997d155db8abee20028f653683 : /opt/app/app.js,violin
+0d5da9582696e769c3cda9cd78ad0ca0ec29c090d5c25225a43f448b9251c62c : node,app.js
+Auditor validation: success: ["drum","drum","drum","flute","flute","flute","flute","violin","violin","violin"]
+There are 10 musicians, let's kill one
+killed 9197d542953315102567775f2d56e59e5f3b0d997d155db8abee20028f653683
