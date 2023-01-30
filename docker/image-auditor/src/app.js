@@ -5,7 +5,7 @@ import moment from "moment";
 const udpSocket = dgram.createSocket("udp4");
 
 const config = {
-    "multicast-group": "239.42.13.37",
+    "multicast-group": "224.0.0.1",
     "multicast-port": 5460,
     "tcp-port": 2205,
     "keep-active-timeout": 5000,

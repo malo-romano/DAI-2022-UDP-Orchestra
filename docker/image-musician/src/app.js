@@ -6,7 +6,7 @@ const socket = dgram.createSocket("udp4");
 const instrument = argv[2];
 
 const config = {
-    "multicast-group": "239.42.13.37",
+    "multicast-group": "224.0.0.1",
     "multicast-port": 5460,
     "interval": 1000,
     "instruments": {
