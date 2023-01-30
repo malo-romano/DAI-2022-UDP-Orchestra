@@ -106,7 +106,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | #        | Topic                                                                                                                                                                   |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Question | How can we represent the system in an **architecture diagram**, which gives information both about the Docker containers, the communication protocols and the commands? |
-|          | _Enter your response here..._                                                                                                                                           |
+|          | _![Orchestra Schema](https://github.com/malo-romano/DAI-2022-UDP-Orchestra/blob/main/images/orchestra_schema.png)_                                                                                                                                           |
 | Question | Who is going to **send UDP datagrams** and **when**?                                                                                                                    |
 |          | _The Musicians are going to send their sound, every second, to the Auditors._                                                                                                                                           |
 | Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received?                                                                        |
