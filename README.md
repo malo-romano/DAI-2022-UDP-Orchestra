@@ -114,7 +114,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | What **payload** should we put in the UDP datagrams?                                                                                                                    |
 |          | _The UUID of the musicians, the song from the instruments._                                                                                                                                           |
 | Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures?                |
-|          | _Enter your response here..._                                                                                                                                           |
+|          | _The musicien is represented with the song of its instruments and UUID. They are not updated but send via an UDP multicast. The Auditor will register in a list the musicians from thee UDP received with the multicast. It will contain the UUID, the instruments and the last time the musician has been seen. This list will be updated every 5 seconds or when he receives a datagram packet. If a musician is not active anymore, he removes it from the list._                                                                                                                                           |
 
 ## Task 2: implement a "musician" Node.js application
 
